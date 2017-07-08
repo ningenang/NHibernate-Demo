@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using DAL.DAO;
+﻿using DAL.DAO;
 using NHibernate.Context;
+using System;
+using System.Web;
 
-namespace NHibernate_Demo.App_Code
+namespace DAL.WebContextualSessionModule
 {
 	public class ContextualSessionModule : IHttpModule
 	{
@@ -38,12 +36,12 @@ namespace NHibernate_Demo.App_Code
 		private static void BindSession(HttpContext context)
 		{
 			var session = SessionFactory.Instance.OpenSession();
-			CurrentSessionContext.Bind(session);
+			WebSessionContext.Bind(session);
 		}
 
 		private static void UnbindSession(HttpContext context)
 		{
-			var session = CurrentSessionContext.Unbind(SessionFactory.GetFactory());
+			var session = WebSessionContext.Unbind(SessionFactory.GetFactory());
 
 			if (session == null)
 				return;

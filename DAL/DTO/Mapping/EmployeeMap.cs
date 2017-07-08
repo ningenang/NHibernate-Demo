@@ -1,4 +1,4 @@
-﻿using DAL.DTO.Classes;
+﻿using DAL.DTO.Classes.HumanResources;
 using NHibernate.Mapping.ByCode.Conformist;
 
 namespace DAL.DTO.Mapping

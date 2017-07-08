@@ -1,6 +1,10 @@
-﻿using NHibernate;
+﻿using DAL.Conventions;
+using DAL.DTO.Classes;
+using NHibernate;
 using NHibernate.Cfg;
 using System;
+using System.Linq;
+using System.Reflection;
 
 namespace DAL.DAO
 {
@@ -50,12 +54,24 @@ namespace DAL.DAO
 		{
 			try
 			{
+				var mapper = new DalModelMapper(typeof(Entity));
+
+				mapper.AddMappings(Assembly.GetExecutingAssembly().GetExportedTypes());
+
+				var entities = Assembly.GetExecutingAssembly()
+					.GetExportedTypes()
+					.Where(t => typeof(Entity).IsAssignableFrom(t) && t != typeof(Entity));
+
+				var mappings = mapper.CompileMappingFor(entities);
+
 				var configuration = new Configuration();
 
 				if (SessionFactoryInterceptor != null)
 					configuration.SetInterceptor(SessionFactoryInterceptor);
 
 				configuration.Configure();
+				configuration.AddMapping(mappings);
+
 				OnSessionFactoryConfiguring(configuration);
 				sessionFactory = configuration.BuildSessionFactory();
 			}

@@ -1,4 +1,4 @@
-﻿namespace DAL.DTO.Classes
+﻿namespace DAL.DTO.Classes.Person
 {
 
 	public class BusinessEntityAddressId

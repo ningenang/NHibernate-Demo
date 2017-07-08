@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace DAL.DTO.Classes
+namespace DAL.DTO.Classes.Person
 {
 	public abstract class BusinessEntity : Entity
     {

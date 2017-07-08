@@ -184,7 +184,6 @@
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Code\ContextualSessionModule.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
@@ -255,6 +254,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\DAL.WebContextualSessionModule\DAL.WebContextualSessionModule.csproj">
+      <Project>{32304fc9-7615-4085-96e7-541f2bedd494}</Project>
+      <Name>DAL.WebContextualSessionModule</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DAL\DAL.csproj">
       <Project>{EBF63D73-C0F9-40E4-84B4-8FBC219388C4}</Project>
       <Name>DAL</Name>

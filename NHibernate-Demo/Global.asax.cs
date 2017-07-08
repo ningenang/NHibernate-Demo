@@ -13,8 +13,5 @@ namespace NHibernate_Demo
 			RouteConfig.RegisterRoutes(RouteTable.Routes);
 			BundleConfig.RegisterBundles(BundleTable.Bundles);
 		}
-
-
-
 	}
 }

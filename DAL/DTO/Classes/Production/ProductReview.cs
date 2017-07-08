@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace DAL.DTO.Classes
+namespace DAL.DTO.Classes.Production
 {
 	public class ProductReview : Entity
     {

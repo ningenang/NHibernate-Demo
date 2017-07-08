@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace DAL.DTO.Classes
+namespace DAL.DTO.Classes.HumanResources
 {
-	public class Employee : Person
+	public class Employee : Person.Person
     {
         public virtual string NationalIDNumber { get; set; }
 
