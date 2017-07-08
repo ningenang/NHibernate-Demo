@@ -43,10 +43,12 @@ namespace DAL.WebContextualSessionModule
 		{
 			var session = WebSessionContext.Unbind(SessionFactory.GetFactory());
 
-			if (session == null)
+			if (session == null || !session.IsOpen)
 				return;
 
-			session.Flush();
+			//if (session.FlushMode == NHibernate.FlushMode.Auto || session.FlushMode == NHibernate.FlushMode.Always)
+			//	session.Flush();
+
 			session.Close();
 		}
 

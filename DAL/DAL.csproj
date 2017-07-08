@@ -67,6 +67,12 @@
     <Compile Include="DTO\Classes\Production\ProductReview.cs" />
     <Compile Include="DTO\Classes\Production\ProductSubcategory.cs" />
     <Compile Include="DTO\Classes\Production\TransactionHistory.cs" />
+    <Compile Include="DTO\Classes\Sales\Customer.cs" />
+    <Compile Include="DTO\Classes\Sales\SalesOrderDetail.cs" />
+    <Compile Include="DTO\Classes\Sales\SalesOrderHeader.cs" />
+    <Compile Include="DTO\Classes\Sales\SalesTerritory.cs" />
+    <Compile Include="DTO\Classes\Sales\SpecialOffer.cs" />
+    <Compile Include="DTO\Classes\Sales\Store.cs" />
     <Compile Include="DTO\Entity.cs" />
     <Compile Include="DTO\Mapping\BusinessEntityAddressMap.cs" />
     <Compile Include="DTO\Mapping\BusinessEntityContactMap.cs" />
@@ -74,6 +80,8 @@
     <Compile Include="DTO\Mapping\PasswordMap.cs" />
     <Compile Include="DTO\Mapping\PersonMap.cs" />
     <Compile Include="DTO\Mapping\ProductCostHistoryMap.cs" />
+    <Compile Include="DTO\Mapping\SalesOrderDetailMap.cs" />
+    <Compile Include="DTO\Mapping\SalesOrderHeaderMapping.cs" />
     <Compile Include="DTO\Mapping\TransactionHistoryMap.cs" />
     <Compile Include="Extensions\PropertyPathExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

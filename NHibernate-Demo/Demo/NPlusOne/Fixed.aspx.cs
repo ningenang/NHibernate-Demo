@@ -1,12 +1,11 @@
 ﻿using System;
 
-namespace NHibernate_Demo
+namespace NHibernate_Demo.Demo.NPlusOne
 {
-	public partial class TODO : System.Web.UI.Page
+	public partial class Fixed : System.Web.UI.Page
 	{
 		protected void Page_Load(object sender, EventArgs e)
 		{
-
 
 		}
 	}

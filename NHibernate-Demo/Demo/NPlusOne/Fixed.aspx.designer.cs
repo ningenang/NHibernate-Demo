@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace NHibernate_Demo
+namespace NHibernate_Demo.Demo.NPlusOne
 {
 
 
-	public partial class About
+	public partial class Fixed
 	{
 	}
 }
