@@ -14,7 +14,7 @@ namespace DAL.DAO
 	/// </summary>
 	public class SessionFactory
 	{
-		private ISessionFactory sessionFactory;
+		private ISessionFactory _sessionFactory;
 
 		public static IInterceptor SessionFactoryInterceptor;
 
@@ -42,10 +42,10 @@ namespace DAL.DAO
 		/// Opens a new session from the NHibernate SessionFactory.
 		/// </summary>
 		/// <returns>The newly opened session.</returns>
-		public ISession OpenSession() => sessionFactory.OpenSession();
+		public ISession OpenSession() => _sessionFactory.OpenSession();
 
 
-		public static ISessionFactory GetFactory() => Instance.sessionFactory;
+		public static ISessionFactory GetFactory() => Instance._sessionFactory;
 
 		/// <summary>
 		/// Initializes this instance.
@@ -73,7 +73,7 @@ namespace DAL.DAO
 				configuration.AddMapping(mappings);
 
 				OnSessionFactoryConfiguring(configuration);
-				sessionFactory = configuration.BuildSessionFactory();
+				_sessionFactory = configuration.BuildSessionFactory();
 			}
 			catch (Exception ex)
 			{

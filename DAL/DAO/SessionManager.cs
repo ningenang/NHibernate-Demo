@@ -2,7 +2,6 @@
 
 namespace DAL.DAO
 {
-	//TODO: RENAME DEFAULT SESSION => CURRENT SESSION
 	/// <summary>
 	/// Singleton class for managing NHibernate Sessions. The core functionality is the SessionStore Dictionary 
 	/// that stores ISessions with a <see cref="Guid"/> key. Methods for managing the sessions are also included.

@@ -8,8 +8,5 @@
 
 		public virtual SalesTerritory Territory { get; set; }
 
-		/* Unmapped properties:
-			- AccountNumber
-		 */
 	}
 }

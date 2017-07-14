@@ -30,8 +30,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Iesi.Collections, Version=4.0.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
-      <HintPath>..\packages\Iesi.Collections.4.0.0.4000\lib\net40\Iesi.Collections.dll</HintPath>
+    <Reference Include="Iesi.Collections, Version=4.0.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Iesi.Collections.4.0.2\lib\net461\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
     </Reference>
     <Reference Include="NHibernate, Version=4.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
       <HintPath>..\packages\NHibernate.4.1.1.4000\lib\net40\NHibernate.dll</HintPath>
@@ -57,6 +60,7 @@
     <Compile Include="DTO\Classes\Person\BusinessEntityAddressId.cs" />
     <Compile Include="DTO\Classes\Person\BusinessEntityContact.cs" />
     <Compile Include="DTO\Classes\Person\ContactType.cs" />
+    <Compile Include="DTO\Classes\Person\EmailAddress.cs" />
     <Compile Include="DTO\Classes\Person\NameStyle.cs" />
     <Compile Include="DTO\Classes\Person\Password.cs" />
     <Compile Include="DTO\Classes\Person\Person.cs" />
@@ -67,6 +71,7 @@
     <Compile Include="DTO\Classes\Production\ProductReview.cs" />
     <Compile Include="DTO\Classes\Production\ProductSubcategory.cs" />
     <Compile Include="DTO\Classes\Production\TransactionHistory.cs" />
+    <Compile Include="DTO\Classes\Production\WorkOrder.cs" />
     <Compile Include="DTO\Classes\Sales\Customer.cs" />
     <Compile Include="DTO\Classes\Sales\SalesOrderDetail.cs" />
     <Compile Include="DTO\Classes\Sales\SalesOrderHeader.cs" />
@@ -76,6 +81,7 @@
     <Compile Include="DTO\Entity.cs" />
     <Compile Include="DTO\Mapping\BusinessEntityAddressMap.cs" />
     <Compile Include="DTO\Mapping\BusinessEntityContactMap.cs" />
+    <Compile Include="DTO\Mapping\EmailAddressMap.cs" />
     <Compile Include="DTO\Mapping\EmployeeMap.cs" />
     <Compile Include="DTO\Mapping\PasswordMap.cs" />
     <Compile Include="DTO\Mapping\PersonMap.cs" />
@@ -87,6 +93,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup />

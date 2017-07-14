@@ -7,5 +7,6 @@
         public virtual BusinessEntity BusinessEntity { get; set; }
 
         public virtual ContactType ContactType { get; set; }
+
     }
 }

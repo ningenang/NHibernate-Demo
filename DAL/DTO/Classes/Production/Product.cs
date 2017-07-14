@@ -9,8 +9,9 @@ namespace DAL.DTO.Classes.Production
         private IList<ProductReview> _reviews = new List<ProductReview>();
         private IList<ProductCostHistory> _costHistory = new List<ProductCostHistory>();
         private IList<TransactionHistory> _transactionHistory = new List<TransactionHistory>();
+		private IList<WorkOrder> _workOrders = new List<WorkOrder>();
 
-        public virtual string Name { get; set; }
+		public virtual string Name { get; set; }
 
         public virtual string ProductNumber { get; set; }
 
@@ -55,5 +56,7 @@ namespace DAL.DTO.Classes.Production
 		public virtual IEnumerable<ProductCostHistory> CostHistory => _costHistory;
 
 		public virtual IEnumerable<TransactionHistory> TransactionHistory => _transactionHistory;
+
+		public virtual IEnumerable<WorkOrder> WorkOrders => _workOrders;
 	}
 }

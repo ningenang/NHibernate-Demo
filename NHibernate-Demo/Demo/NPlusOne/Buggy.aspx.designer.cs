@@ -13,21 +13,30 @@ namespace NHibernate_Demo.Demo.NPlusOne {
     public partial class Buggy {
         
         /// <summary>
-        /// grdProductSalesTransactions control.
+        /// lblDiagnostic control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView grdProductSalesTransactions;
+        protected global::System.Web.UI.WebControls.Label lblDiagnostic;
         
         /// <summary>
-        /// odsProductSalesTransactions control.
+        /// grdData control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ObjectDataSource odsProductSalesTransactions;
+        protected global::System.Web.UI.WebControls.GridView grdData;
+        
+        /// <summary>
+        /// odsData control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ObjectDataSource odsData;
     }
 }
